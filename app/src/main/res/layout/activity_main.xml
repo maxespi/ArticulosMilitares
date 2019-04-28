@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    tools:context=".IntroActivity">
+
+    <!--Logo View-->
+    <View
+        android:id="@+id/logo_here"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/menuScreen"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text="Iniciar sesion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blue_button_bg"
+                android:onClick="gologin"
+                android:id="@+id/gologin"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:text="Registrar cuenta"
+                android:layout_width="match_parent"
+                android:id="@+id/goregister"
+                android:layout_marginTop="15dp"
+                android:onClick="goregister"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_button_bg"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:text="Recuperar contraseña"
+                android:layout_width="match_parent"
+                android:onClick="gorecovery"
+                android:id="@+id/gorecovery"
+                android:layout_marginTop="15dp"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_button_bg"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DiscountActivity">
+
+    <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoView"
+    />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/menuScreen"
+            android:background="@drawable/gradient_bg"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <!--Logo View-->
+            <!--<View
+                    android:id="@+id/logo_here"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+            />-->
+
+            <TextView
+                    android:text="20% de Descuento"
+                    android:textColor="#80ffff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/promo"
+                    android:id="@+id/descuento"
+            />
+
+            <Button
+                    android:text="Salir"
+                    android:id="@+id/btnExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    style="?android:textAppearanceSmall"
+                    android:background="@drawable/blue_button_bg"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+            />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

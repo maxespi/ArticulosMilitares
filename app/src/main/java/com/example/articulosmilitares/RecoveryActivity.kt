@@ -36,7 +36,7 @@ class RecoveryActivity : AppCompatActivity() {
         progressBar.visibility=View.VISIBLE
         auth.sendPasswordResetEmail(email).addOnCompleteListener(this){
             task ->
-            if (task.isSuccessful){
+            if (task.isComplete){
                 Toast.makeText(this, "Correo enviado", Toast.LENGTH_LONG).show()
                 progressBar.visibility=View.GONE
                 startActivity(Intent(this, IntroActivity::class.java))
